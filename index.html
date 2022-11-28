@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Site</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- (header.header>.wrapper>(.menu-wrap>ul.menu>li.-item*5>a.-link{Link$})+.hero>h1.-title{Дизайн и верстка}+p.-text{Lorem30}+.-btn-wrap>a.-btn{Написать мне})+(.about>.wrapper>h2.-title{Обо мне}+p.-text{Lorem30})+(.projects>.wrapper>.-wrap>(.-item>(.-img-wrap>img.-img)+.-desc>h3.-title{40+}+p.-text{проектов})*6)+(.work>.wrapper>h2.-title{Как я работаю}+p.-text{Lorem30}+.video-wrap>iframe.video+.play>img.-img)+footer.footer>.wrapper>p.-text{Иванов Иван}+.info{(&copy;) 2018. Все права защищены.}|bem -->
+
+    <!-- (header.header>.wrapper>(.menu-wrap>ul.menu>li.-item*5>a.-link{Link$})+.hero>h1.-title{Дизайн и верстка}+p.-text{Lorem30}+.-btn-wrap>a.-btn{Написать мне})+(.about>.wrapper>h2.-title{Обо мне}+p.-text{Lorem30})+(.projects>.wrapper>.-wrap>(.-item>(.-img-wrap>img.-img)+.-desc>h3.-title{40+}+p.-text{проектов})*6)+(.work>.wrapper>h2.-title{Как я работаю}+p.-text{Lorem30}+.video-wrap>iframe.video+.play>img.-img)+footer.footer>.wrapper>p.-text{Иванов Иван}+.-info{(&copy;) 2018. Все права защищены.}|bem -->
 
     <header class="header">
         <div class="wrapper">
@@ -63,7 +67,7 @@
             <h2 class="about__title">
                 Обо мне
             </h2>
-            <p class="about__text">
+            <p class="about__text primary">
                 Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
                 стандартной "рыбой" для текстов на латинице с начала XVI века.
             </p>
@@ -74,7 +78,7 @@
             <div class="projects__wrap">
                 <div class="projects__item">
                     <div class="projects__img-wrap">
-                        <img src="" alt="" class="projects__img">
+                        <img src="images/project.svg" alt="project vector" class="projects__img">
                     </div>
                     <div class="projects__desc">
                         <h3 class="projects__title">
@@ -87,7 +91,7 @@
                 </div>
                 <div class="projects__item">
                     <div class="projects__img-wrap">
-                        <img src="" alt="" class="projects__img">
+                        <img src="images/project.svg" alt="project vector" class="projects__img">
                     </div>
                     <div class="projects__desc">
                         <h3 class="projects__title">
@@ -100,7 +104,7 @@
                 </div>
                 <div class="projects__item">
                     <div class="projects__img-wrap">
-                        <img src="" alt="" class="projects__img">
+                        <img src="images/project.svg" alt="project vector" class="projects__img">
                     </div>
                     <div class="projects__desc">
                         <h3 class="projects__title">
@@ -113,7 +117,7 @@
                 </div>
                 <div class="projects__item">
                     <div class="projects__img-wrap">
-                        <img src="" alt="" class="projects__img">
+                        <img src="images/project.svg" alt="project vector" class="projects__img">
                     </div>
                     <div class="projects__desc">
                         <h3 class="projects__title">
@@ -126,7 +130,7 @@
                 </div>
                 <div class="projects__item">
                     <div class="projects__img-wrap">
-                        <img src="" alt="" class="projects__img">
+                        <img src="images/project.svg" alt="project vector" class="projects__img">
                     </div>
                     <div class="projects__desc">
                         <h3 class="projects__title">
@@ -139,7 +143,7 @@
                 </div>
                 <div class="projects__item">
                     <div class="projects__img-wrap">
-                        <img src="" alt="" class="projects__img">
+                        <img src="images/project.svg" alt="project vector" class="projects__img">
                     </div>
                     <div class="projects__desc">
                         <h3 class="projects__title">
@@ -163,11 +167,10 @@
                 стандартной "рыбой" для текстов на латинице с начала XVI века.
             </p>
             <div class="video-wrap">
-                <iframe class="video">
-
+                <iframe class="video" src="https://www.youtube.com/embed/BZ8Q_c0Olyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
                 <div class="play">
-                    <img src="" alt="" class="play__img">
+                    <img src="images/play_button.svg" alt="play button for video" class="play__img">
                 </div>
             </div>
         </div>
@@ -177,7 +180,7 @@
             <p class="footer__text">
                 Иванов Иван
             </p>
-            <div class="info">
+            <div class="footer__info">
                 (&copy;) 2018. Все права защищены.
             </div>
         </div>
