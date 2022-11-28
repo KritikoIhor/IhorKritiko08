@@ -5,10 +5,182 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Site</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <!-- (header.header>.wrapper>(.menu-wrap>ul.menu>li.-item*5>a.-link{Link$})+.hero>h1.-title{Дизайн и верстка}+p.-text{Lorem30}+.-btn-wrap>a.-btn{Написать мне})+(.about>.wrapper>h2.-title{Обо мне}+p.-text{Lorem30})+(.projects>.wrapper>.-wrap>(.-item>(.-img-wrap>img.-img)+.-desc>h3.-title{40+}+p.-text{проектов})*6)+(.work>.wrapper>h2.-title{Как я работаю}+p.-text{Lorem30}+.video-wrap>iframe.video+.play>img.-img)+footer.footer>.wrapper>p.-text{Иванов Иван}+.info{(&copy;) 2018. Все права защищены.}|bem -->
+
+    <header class="header">
+        <div class="wrapper">
+            <div class="menu-wrap">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link menu__link--current">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            Об авторе
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            Работы
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            Процесс
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hero">
+                <h1 class="hero__title">
+                    Дизайн и верстка
+                </h1>
+                <p class="hero__text primary">
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+                    стандартной "рыбой" для текстов на латинице с начала XVI века.
+                </p>
+                <div class="hero__btn-wrap">
+                    <a href="#" class="hero__btn btn">
+                        Написать мне
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="about">
+        <div class="wrapper">
+            <h2 class="about__title">
+                Обо мне
+            </h2>
+            <p class="about__text">
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+                стандартной "рыбой" для текстов на латинице с начала XVI века.
+            </p>
+        </div>
+    </div>
+    <div class="projects">
+        <div class="wrapper">
+            <div class="projects__wrap">
+                <div class="projects__item">
+                    <div class="projects__img-wrap">
+                        <img src="" alt="" class="projects__img">
+                    </div>
+                    <div class="projects__desc">
+                        <h3 class="projects__title">
+                            40+
+                        </h3>
+                        <p class="projects__text">
+                            проектов
+                        </p>
+                    </div>
+                </div>
+                <div class="projects__item">
+                    <div class="projects__img-wrap">
+                        <img src="" alt="" class="projects__img">
+                    </div>
+                    <div class="projects__desc">
+                        <h3 class="projects__title">
+                            40+
+                        </h3>
+                        <p class="projects__text">
+                            проектов
+                        </p>
+                    </div>
+                </div>
+                <div class="projects__item">
+                    <div class="projects__img-wrap">
+                        <img src="" alt="" class="projects__img">
+                    </div>
+                    <div class="projects__desc">
+                        <h3 class="projects__title">
+                            40+
+                        </h3>
+                        <p class="projects__text">
+                            проектов
+                        </p>
+                    </div>
+                </div>
+                <div class="projects__item">
+                    <div class="projects__img-wrap">
+                        <img src="" alt="" class="projects__img">
+                    </div>
+                    <div class="projects__desc">
+                        <h3 class="projects__title">
+                            40+
+                        </h3>
+                        <p class="projects__text">
+                            проектов
+                        </p>
+                    </div>
+                </div>
+                <div class="projects__item">
+                    <div class="projects__img-wrap">
+                        <img src="" alt="" class="projects__img">
+                    </div>
+                    <div class="projects__desc">
+                        <h3 class="projects__title">
+                            40+
+                        </h3>
+                        <p class="projects__text">
+                            проектов
+                        </p>
+                    </div>
+                </div>
+                <div class="projects__item">
+                    <div class="projects__img-wrap">
+                        <img src="" alt="" class="projects__img">
+                    </div>
+                    <div class="projects__desc">
+                        <h3 class="projects__title">
+                            40+
+                        </h3>
+                        <p class="projects__text">
+                            проектов
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="work">
+        <div class="wrapper">
+            <h2 class="work__title">
+                Как я работаю
+            </h2>
+            <p class="work__text primary">
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+                стандартной "рыбой" для текстов на латинице с начала XVI века.
+            </p>
+            <div class="video-wrap">
+                <iframe class="video">
+
+                </iframe>
+                <div class="play">
+                    <img src="" alt="" class="play__img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="wrapper">
+            <p class="footer__text">
+                Иванов Иван
+            </p>
+            <div class="info">
+                (&copy;) 2018. Все права защищены.
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
