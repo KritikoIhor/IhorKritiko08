@@ -1,173 +1,175 @@
 /* MAIN */
 
 .wrapper {
-    width: 58%;
+    width: 58%; /* макс ширина блоков */
     /* outline: 1px solid firebrick; */
 }
 
 .wrapper,
 .primary {
-    margin: 0 auto;
+    margin: 0 auto; /* центрируем блоки */
 }
 
 .primary {
-    color: #727272;
+    color: #727272; /* цвет текста */
+    width: 45%; /* ширина блоков с текстом */
 }
 
 /* HEADER */
 
 .header {
-    background-color: #eeeff1;
-    padding: 4% 0 8%;
+    background-color: #eeeff1; /* задний фон всего блока хедера */
+    padding: 4% 0 8%; /* внутренние отступы блока хедера */
 }
 
 .menu-wrap {
-    margin-bottom: 16.5%;
+    margin-bottom: 16.5%; /* наружный нижний отступ */
 }
 
 .menu {
-    font-size: 0;
+    font-size: 0; /* скрывает список меню */
 }
 
 .menu__item {
-    display: inline-block;
-    font-size: 1rem;
-    margin-right: 3.8%;
+    display: inline-block; /* список меню как блочно строный */
+    font-size: 1rem; /* отображает список */
+    margin-right: 3.8%; /* отступ справа для каждого элемента в списке */
 }
 
 .menu__link {
-    text-transform: uppercase;
-    color: black;
-    font-weight: 400;
-    letter-spacing: 0.1em;
+    text-transform: uppercase; /* текст в списке верхним регистром */
+    color: black; /* цвет текста церный, ибо ссылки синего цвета по дефолту */
+    letter-spacing: 0.1em; /* межбуквенное расстояние */
 }
 
 .menu__link--current {
-    color: #34547A;
+    font-weight: bold;
+    color: #34547A; /* цвет текста выбранного элемента списка */
 }
 
 .menu__link:hover {
-    color: #609de7;
-    text-decoration: underline;
+    color: #609de7; /* цвет текста выбранного элемента списка при наведении */
+    text-decoration: underline; /* цвет текста подчеркивается линией при наведении */
 }
 
 .hero__title {
-    font-size: 3rem;
-    margin-bottom: 6%;
+    font-weight: bold; /* делает текст жирным */
+    font-size: 3rem; /* размер заглавного текста */
+    margin-bottom: 6%; /* нижний отступ заглавного текста */
 }
 
 .hero__text {
-    margin: 0;
-    margin-bottom: 6.1%;
-    line-height: 1.625rem;
+    margin: 0; /* убирает наружные отступы чтобы блок примыкал к крайнему левому боку */
+    margin-bottom: 6.1%; /* наружный отступ текста снизу */
 }
 
 .hero__btn {
-    display: inline-block;
-    padding: 20px 41px;
-    line-height: 1.625rem;
-    background: #34547A;
-    color: white;
-    letter-spacing: 0.1em;
+    display: inline-block; /* кнопка оторажается как блочно строчный элемент */
+    padding: 20px 41px;  /* внутренние отступы внутри кнопки */
+    background: #34547A; /* задний фон кнопки */
+    color: white; /* цвет текста белый */
+    letter-spacing: 0.1em; /* межбуквенное расстояние */
 }
 
 .hero__btn:hover {
-    background: #609de7;
-    color: black;
-}
-
-.primary {
-    width: 49%;
+    background: #609de7; /* цвет заднего фона кнопки при наведении */
+    color: black; /* цвет текста кнопки меняется при наведении */
 }
 
 .about__title,
 .work__title {
-    font-size: 2rem;
-    text-align: center;
-    margin: 10% 0 4.5%;
+    font-size: 2rem; /* размер текста */
+    font-weight: bold; /* делает текст жирным */
+    text-align: center; /* текст по центру блока */
+    margin: 10% 0 4.5%; /* наружные отступы заголовков */
 }
 
 .about__text,
 .work__text {
-    text-align: center;
-    line-height: 1.625rem;
-    margin-bottom: 9%;
+    text-align: center; /* текст по центру блока */
+    margin-bottom: 9%; /* наружный отступ текста */
 }
 
 .about>.wrapper,
 .work>.wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: flex; /* элементы внутри становятся гибкими */
+    flex-direction: column; /* главная ось направлена сверху вниз */
+    justify-content: center; /* элементы по центру */
 }
 
 .projects__wrap,
-.projects__item {
-    display: flex;
+.projects__item,
+.projects__desc  {
+    display: flex; /* элементы внутри становятся гибкими */
 }
 
 .projects,
 .footer {
-    background: #34547A;
+    background: #34547A; /* цвет заднего фона на всю ширину браузера */
 }
 
 .projects__wrap {
-    padding: 9% 0;
-    justify-content: space-between;
+    padding: 9% 0; /* внутренний отступ */
+    justify-content: space-between; /* расстояния между соседними элементами одинаковые, между элементами и краями флекс-контейнера отступов нет */
 }
 
 .projects__desc {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 20px;
-    color: white;
+    flex-direction: column; /* главная ось направлена сверху вниз */
+    justify-content: space-between; /* расстояния между соседними элементами одинаковые, между элементами и краями флекс-контейнера отступов нет */
+    padding-left: 20px; /* внутренний отступ */
+    color: white; /* цвет текста описания */
 }
 
 .projects__title {
-    font-size: 1.313rem;
-    line-height: 1.563rem;
+    font-weight: bold; /* делает текст жирным */
 }
 
-.projects__text {
-    line-height: 1.625rem;
+.projects__title,
+.footer__text {
+    font-size: 1.313rem; /* размер текста */
+    line-height: 1.563rem; /* высота строки */
+}
+
+.work {
+    background-color: #eeeff1; /* задний фон */
 }
 
 .work__text {
-    margin-bottom: 5.1%;
+    margin-bottom: 5.1%; /* наружный отступ снизу */
 }
 
 .video-wrap {
-    position: relative;
-    margin-bottom: 9%;
+    position: relative; /* указываем родителю чтобы кнопка стала относительного него */
+    margin-bottom: 9%; /* наружный отступ снизу */
 }
 
 .video {
-    width: 100%;
-    height: 600px;
+    width: 100%; /* ширина блока с видео */
+    height: 600px; /* высота блока с видео */
 }
 
 .play__img {
-    position: absolute;
-    top: 251.5px;
-    left: 506.8px;
-    width: 100px;
-    z-index: 1;
-    cursor: pointer;
+    position: absolute; /* кнопка позиционируется относительно роителя */
+    top: 251.5px; /* отступ сверху */
+    left: 506.8px; /* отступ слева */
+    width: 100px; /* ширина картинки */
+    z-index: 1; /* картинка поверх всего окна */
+    cursor: pointer; /* при наведении на картинку появляется указатель */
 }
 
+/* FOOTER */
+
 .footer {
-    color: white;
+    color: white; /* цвет текста в футере */
 }
 
 .footer__text {
-    padding: 50px 0 20px;
-    font-size: 1.313rem;
-    line-height: 1.563rem;
+    font-weight: bold; /* делает текст жирным */
+    padding: 50px 0 20px; /* внутренний отступ */
 }
 
 .footer__info {
-    padding-bottom: 50px;
-    font-size: 0.813rem;
-    line-height: 1.313rem;
+    padding-bottom: 50px; /* внутренний отступ снизу */
+    font-size: 0.813rem; /* размер текста */
+    line-height: 1.313rem; /* высота строки */
 }
